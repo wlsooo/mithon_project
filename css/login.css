@@ -1,4 +1,4 @@
-.join-container {
+.login-container {
     width: 400px;
     height: 300px;
     border: 1px solid black;
@@ -12,7 +12,7 @@
     text-align: center;
     visibility: hidden;
 }
-.join-text {
+.login-text {
     font-size: 32px;
     font-weight: bold;
     margin: 20px 0;
@@ -26,7 +26,7 @@ input {
     background-color: #ddd;
     font-size: 20px;
 }
-.join-btn {
+.login-btn {
     width: 150px;
     height: 40px;
     background-color: #2D4066;
@@ -39,6 +39,6 @@ input {
     color: #fff;
     margin: 10px auto;
 }
-.show-join {
+.show-login {
     visibility: visible;
 }
