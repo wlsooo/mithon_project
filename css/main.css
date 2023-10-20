@@ -56,13 +56,67 @@ main {
     display: flex;
     align-items: center;
 }
+/* CSS */
 .calendar {
     width: 500px;
     height: 610px;
     background-color: #fff;
     border-radius: 50px;
-    margin-left: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.calendar-header span {
+    cursor: pointer;
+}
+.calendar-body {
+    height: 400px;
+}
+.day-names {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.day-name {
+    width: 13.5%;
+    text-align: center;
+    color: var(--serve-color); /* 사용자 지정 색상 사용 가능 */
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.day {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 5px auto;
+}
+
+.today {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.saturday {
+    color: #007bff; /* 파란색 */
+}
+
+.sunday {
+    color: #ff0000; /* 빨간색 */
+}
+
 .line-container {
     margin-left: 32px;
 }
