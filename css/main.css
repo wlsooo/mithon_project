@@ -2,9 +2,6 @@
     --main-color: #2D4066;
     --serve-color: #576787;
 }
-/* html,body,main {
-    height: 100%;
-} */
 body {
     background-color: #2D4066;
 }
@@ -36,6 +33,18 @@ main {
 .tool-container > ul > li {
     margin-bottom: 50px;
 }
+.tool-container > ul > li:first-child {
+    color: #F0F35A;
+}
+.tool-container > ul > li:nth-child(2) {
+    color: #4AF546;
+}
+.tool-container > ul > li:nth-child(3) {
+    color: #3EEEE4;
+}
+.tool-container > ul > li:nth-child(4) {
+    color: #E958E3;
+}
 .main-container {
     margin: 50px 90px;
 }
@@ -54,14 +63,62 @@ main {
     border-radius: 50px;
     margin-left: 20px;
 }
+
+.calendar {
+    width: 500px;
+    height: 610px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.calendar-header span {
+    cursor: pointer;
+}
+
+.day-names {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.day-name {
+    width: 13.5%;
+    text-align: center;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+
 .line-container {
     margin-left: 32px;
 }
 .line {
     width: 80px;
+    height: 60px;
     border-bottom: 1px solid black;
 }
-
+.line2 {
+    width: 180px;
+    height: 105px;
+    margin-left: 63px;
+    border-bottom: 1px solid black;
+}
 .info {
     width: 310px;
     height: 650px;
