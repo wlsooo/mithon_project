@@ -1,0 +1,71 @@
+:root {
+    --main-color: #2D4066;
+    --serve-color: #576787;
+}
+/* html,body,main {
+    height: 100%;
+} */
+body {
+    background-color: #2D4066;
+}
+main {
+    display: flex;
+}
+.header-container {
+    height: 50px;
+    background-color: #576787;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.header-container > .bi {
+    font-size: 26px;
+    margin: 0 20px;
+}
+.tool-container {
+    width: 90px;
+    background-color: #D5D9E0;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 50px 50px 0;
+}
+.tool-container > ul {
+    margin-left: 20px;
+}
+.tool-container > ul > li {
+    margin-bottom: 50px;
+}
+.main-container {
+    margin: 50px 90px;
+}
+.choice-genre {
+    width: 670px;
+    height: 650px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.calendar {
+    width: 500px;
+    height: 610px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+.line-container {
+    margin-left: 32px;
+}
+.line {
+    width: 80px;
+    border-bottom: 1px solid black;
+}
+
+.info {
+    width: 310px;
+    height: 650px;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 50px;
+}
