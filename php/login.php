@@ -8,7 +8,7 @@ if ($conn->connect_error) {
 $idtext = $_POST['userId'];
 $pwtext = $_POST['userPass'];
 
-$sql = "select * from user us, user_data udb where us.id=udb.id and us.id='$idtext'";
+$sql = "select svu.id from service_user svu, user_data udb where svu.id=udb.id and svu.id='$idtext'";
 $login = mysqli_query($conn, $sql);
 
 if($login){
