@@ -71,3 +71,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateMonth();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const highlighters = document.querySelectorAll('.tool-container i.bi-highlighter');
+    const eraser = document.querySelector('.bi-eraser-fill');
+    const days = document.querySelectorAll('.day');
+
+    highlighters.forEach((highlighter, index) => {
+        highlighter.addEventListener('click', function() {
+            const colors = ['#F0F35A', '#4AF546', '#3EEEE4', '#E958E3'];
+            const selectedColor = colors[index];
+
+            days.forEach(day => {
+                day.addEventListener('click', function() {
+                    this.style.backgroundColor = selectedColor;
+                });
+            });
+        });
+    });
+
+    eraser.addEventListener('click', function() {
+        days.forEach(day => {
+            day.addEventListener('click', function() {
+                this.style.backgroundColor = '#fff'; // 하얀색으로 설정
+            });
+        });
+    });
+});
