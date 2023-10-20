@@ -42,3 +42,11 @@ input {
 .show-login {
     visibility: visible;
 }
+button {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+}
